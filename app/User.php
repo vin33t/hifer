@@ -39,6 +39,16 @@ class User extends Authenticatable
         return $this->belongsToMany(Role::class, 'role_user');
     }
     
-    
+    public function client(){
+        return $this->hasOne('App\Client');
+    }
+
+    public function employee(){
+        return $this->hasOne('App\Employee');
+    }
+
+    public function vendor(){
+        return $this->hasOne('App\Vendor');
+    }
     
 }

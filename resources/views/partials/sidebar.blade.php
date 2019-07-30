@@ -51,6 +51,14 @@
             </li>
             @endcan
 
+            //
+            <li><a href="{{route('clients')}}"><i class="fa fa-user"></i>Clients</a></li>
+            <li><a href="{{route('employees')}}"><i class="fa fa-users"></i>Employees</a></li>
+            <li><a href="{{route('vendors')}}"><i class="fa fa-users"></i>Vendors</a></li>
+            <li><a href="{{route('products')}}"><i class="fa fa-user"></i>Products</a></li>
+            <li><a href="{{route('categories')}}"><i class="fa fa-user"></i>Categories</a></li>
+
+
             <li class="{{ $request->segment(1) == 'change_password' ? 'active' : '' }}">
                 <a href="{{ route('auth.change_password') }}">
                     <i class="fa fa-key"></i>
